@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.about {
+  font-size: 0.8rem;
+  padding: 2.5rem 0 0 2.5rem;
+}
+.about h1 {
+  font-size: 1.5em;
+}
+.about p {
+  font-size: 0.9em;
+  padding-top: 0.3rem;
+}
+.skills {
+  padding: 2.5rem 0 0 2.5rem;
+}
+.skills-foto img {
+  width: 250px;
+  margin: 1.5rem;
+  height: 250px;
+}
