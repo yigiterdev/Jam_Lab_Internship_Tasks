@@ -1,0 +1,136 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1c1e2e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #1c1e2e;
+}
+.navbar-brand {
+  text-decoration: none;
+  color: #1c1e2e;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: #ec6525;
+}
+.navbar-brand i {
+  padding: 5px;
+  color: #ec6525;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 47px;
+  border: none;
+  background-color: #ec6525;
+}
+.btn:hover {
+  background-color: white;
+  color: #ec6525;
+  border: 1px solid #ec6525;
+}
+.btn-secondary {
+  background-color: white;
+  color: #ec6525;
+  border: 1px solid #ec6525;
+}
+.btn-secondary:hover {
+  border: none;
+  background-color: #ec6525;
+  color: white;
+}
+.carousel-indicator {
+  color: #1c1e2e;
+}
+.quote {
+  background-color: #f7f8fc;
+  border-left: 2px solid #ec6525;
+}
+.profile-img {
+  width: 50px;
+  border-radius: 50%;
+}
+.theme-link {
+  color: #1c1e2e;
+  text-decoration: underline;
+}
+.theme-link:hover {
+  color: #1c1e2e;
+}
+#section2 {
+  background-color: #fafbfe;
+}
+#section2 i {
+  font-size: 50px;
+  color: #ec6525;
+}
+#section3 li {
+  margin: 20px;
+}
+#section3 li .fa-check-circle {
+  color: lightgreen;
+}
+.fa-user-check {
+  color: lightgreen;
+}
+.lead-form-wrapper {
+  background-color: #f7f8fc;
+}
+#section5 .item-inner {
+  background-color: #f7f8fc;
+  border-left: none;
+}
+#section5 .quote {
+  border-left: none;
+}
+.fa-quote-right {
+  color: white;
+  background-color: #ec6525;
+  border-radius: 50%;
+  padding: 10px;
+}
+#section6 {
+  background-color: #ec6525;
+  color: #fff;
+}
+#section6 a {
+  color: white;
+}
+#section6 i {
+  background-color: #cf5d23;
+  border-radius: 47px;
+  padding: 10px;
+}
+#new-release {
+  padding: 20px;
+  background-color: #5cb378;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.carousel-indicators {
+  bottom: -4rem;
+}
+
+.carousel-indicators li {
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #1c1e2e;
+}
+.carousel-indicators .active {
+  background-color: gray;
+}
