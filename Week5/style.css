@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  float: right;
+  width: 70%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #2f4f4f;
+  list-style: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-item {
+  -webkit-transform: translate3d(600px, 0, 0);
+  transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-link:hover {
+  color: #adff2f;
+}
+
+.nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.nav-item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.menu-btn {
+  position: fixed;
+  z-index: 3;
+  right: 35px;
+  top: 75px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: white;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.social-media {
+  position: absolute;
+  background: #2f4f4f;
+  top: 50%;
+  opacity: 0.8;
+}
+.social-media a {
+  color: white;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media i:hover {
+  color: black;
+  transition: all 0.4s;
+}
+.welcome-page {
+  background-image: url(./img/parker-johnson-iUxpkxPvRTk-unsplash.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.welcome-page h1 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.welcome-page .btn {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  background-color: #2f4f4f;
+}
+.about-us-page {
+  background-image: url(./img/hieu-vu-minh-4eDiRuTHU30-unsplash.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: scroll;
+}
+
+.about-us-page .container h1 {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 500px;
+  padding-right: 30px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 45px;
+}
+.about-us h1 {
+  font-family: "Anton", sans-serif;
+}
+
+.about-us h1 span {
+  background: #2f4f4f;
+  padding: 0 10px;
+  color: #fff;
+  display: inline-block;
+}
+.services-page {
+  background-image: url(./img/photo-1454006639960-af9b6a303eae.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.services-page .container h1 {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 500px;
+  padding-left: 30px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 45px;
+}
+.services h1 {
+  font-family: "Anton", sans-serif;
+}
+.services h1 span {
+  background: #2f4f4f;
+  padding: 0 10px;
+  color: #fff;
+  display: inline-block;
+}
+.service-box {
+  background-image: url(./img/photo-1453904061941-02ada96e1f4a.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.service-box .card:hover {
+  background-color: #adff2f;
+  transition: all 0.4 ease-in-out;
+}
+.portfolio-page {
+  background-image: url(./img/photo-1526154772433-ada42bbf4a4b.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.portfolio-page .container h1 {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 500px;
+  padding-right: 30px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 45px;
+}
+.portfolio {
+  background-image: url(./img/photo-1464618663641-bbdd760ae84a.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.portfolio h1 span {
+  font-family: "Anton", sans-serif;
+  background: #2f4f4f;
+  padding: 0 10px;
+  color: #fff;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.contact-us-page {
+  background-image: url(./img/photo-1534536281715-e28d76689b4d.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.contact-us-page .container h1 {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 500px;
+  padding-left: 30px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 45px;
+}
+.contact {
+  background-image: url(./img/photo-1508615039623-a25605d2b022.jpeg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+
+  min-height: 200px;
+  background-attachment: scroll;
+}
+.contact h1 {
+  font-family: "Anton", sans-serif;
+}
+.contact h1 span {
+  background: #2f4f4f;
+  padding: 0 10px;
+  color: #fff;
+  display: inline-block;
+}
+.contact a {
+  color: white;
+  padding: 10px;
+}
+.contact a:hover {
+  color: #adff2f;
+  transition: all 0.4 ease-in-out;
+}
+.information {
+  color: white;
+  background-color: #2f4f4f;
+  border-radius: 10px;
+}
+.contact-form {
+  color: white;
+  background-color: #2f4f4f;
+  border-radius: 10px;
+}
+.contact-form .btn {
+  background-color: white;
+  color: #2f4f4f;
+  border-radius: 10px;
+}
+.contact-form .btn:hover {
+  background-color: #adff2f;
+  color: black;
+  font-weight: 700;
+}
+.footer {
+  background-color: #2f4f4f;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #adff2f;
+}
+.footer a i {
+  margin: 10px;
+  font-size: 25px;
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  #navbarNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar .nav-item {
+    margin: 10px;
+  }
+  .welcome-page {
+    background-attachment: fixed;
+  }
+  .welcome-page h1 {
+    left: 50%;
+  }
+  .welcome-page .btn {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+  }
+  .about-us-page {
+    background-attachment: fixed;
+  }
+  .about-us-page .container h1 {
+    font-size: 60px;
+    padding-right: 200px;
+  }
+  .menu-nav {
+    width: 50%;
+  }
+  .services-page {
+    background-attachment: fixed;
+  }
+  .services-page .container h1 {
+    font-size: 60px;
+    padding-left: 200px;
+  }
+  .menu .nav-link {
+    font-size: 30px;
+  }
+  .portfolio-page {
+    background-attachment: fixed;
+  }
+  .portfolio-page .container h1 {
+    font-size: 60px;
+    padding-right: 200px;
+  }
+  .contact-us-page {
+    background-attachment: fixed;
+  }
+  .contact-us-page .container h1 {
+    font-size: 60px;
+    padding-left: 200px;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
