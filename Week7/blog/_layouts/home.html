@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<style>
+  .featured-h1 {
+    text-align: center;
+  }
+
+  #featured-articles {
+    background-image: url(../img/photo-1488190211105-8b0e65b80b4e.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  #featured-articles a {
+    color: #fff;
+  }
+  #new-articles a {
+    color: #fff;
+  }
+  #new-articles {
+    background-image: url(../img/photo-1486312338219-ce68d2c6f44d.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  #tech-articles {
+    background-image: url(../img/photo-1471107340929-a87cd0f5b5f3.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  #tech-articles a {
+    color: #3cb883;
+  }
+  #social-articles {
+    background-image: url(../img/95cdfeef.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  #social-articles a,
+  h1 {
+    color: #fbb3b3;
+  }
+</style>
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%} {{ content }} {%- if site.posts.size > 0 -%} {%- include
+featured-articles.html -%} {%- include new_articles.html -%}{%- include
+tech-articles.html -%}{%- include social-articles.html -%}{%- endif -%}

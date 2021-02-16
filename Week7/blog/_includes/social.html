@@ -1,0 +1,37 @@
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+  crossorigin="anonymous"
+/>
+<ul class="social-media-list">
+  {%- if site.github_username -%}
+  <li>
+    <i class="fab fa-github"></i>
+    <a
+      href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
+      class="text-light"
+    >
+      <span class="username p-2">{{ site.github_username| escape }}</span></a
+    >
+  </li>
+  {%- endif -%} {%- if site.linkedin_username -%}
+  <li>
+    <i class="fab fa-linkedin"></i>
+    <a
+      href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"
+      class="text-light"
+      ><span class="username p-2">{{ site.linkedin_username| escape }}</span></a
+    >
+  </li>
+  {%- endif -%} {%- if site.twitter_username -%}
+  <li>
+    <i class="fab fa-twitter"></i>
+    <a
+      href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"
+      class="text-light"
+      ><span class="username p-2">{{ site.twitter_username| escape }}</span></a
+    >
+  </li>
+  {%- endif -%}
+</ul>
